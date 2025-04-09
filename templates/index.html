@@ -9,18 +9,31 @@
 <body>
   <div class="controle">
     <label>Você quer jogar com:</label>
-    <select id="jogador">
+    <select id="simbolo"> <!-- corrigido de "jogador" para "simbolo" -->
       <option value="X">X</option>
       <option value="O">O</option>
     </select>
     <label>Quem começa:</label>
-    <select id="inicio">
-      <option value="voce">Você</option>
-      <option value="ia">IA</option>
+    <select id="quemComeca"> <!-- corrigido de "inicio" para "quemComeca" -->
+      <option value="Você">Você</option>
+      <option value="IA">IA</option>
     </select>
-    <button onclick="iniciarJogo()">Iniciar</button>
+    <button id="iniciarBtn">Iniciar</button> <!-- adicionado id="iniciarBtn" -->
   </div>
-  <div id="tabuleiro" class="tabuleiro"></div>
+
+  <div id="tabuleiro" class="tabuleiro">
+    <!-- as 9 células do tabuleiro -->
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+    <div class="celula"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
